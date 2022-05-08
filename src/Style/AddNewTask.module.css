@@ -1,0 +1,61 @@
+.AddNewTaskContainer{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 2rem;
+
+    margin: 0 24rem 0 20rem;
+}
+
+.AddNewTaskTarefasList{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 2rem;
+}
+.AddNewTaskTarefasList div:first-child{
+    
+    cursor: pointer;
+    margin-right: 10rem;
+}
+
+
+.AddNewTaskTarefasList div:last-child input{
+    margin-right:1rem;
+    cursor: pointer;
+}
+
+.AddNewTaskTarefasList div:last-child input[type="Checkbox"]
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.AddNewTaskTarefasList div:last-child img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+.AddNewTaskTarefasList div:last-child input:checked~ div:first-child p{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .AddNewTaskContainer{
+    
+        font-size: 2rem;
+    
+        margin: 0 3rem 0 1rem;	
+    }
+    .tasksParagro{
+        font-size: 1.5rem;
+        width: 60%;
+        height: 3rem;
+    }
+
+}

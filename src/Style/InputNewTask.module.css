@@ -1,0 +1,53 @@
+.AddNewTaskContent{
+    display: flex;
+    align-items:center;
+    margin: 10rem 20rem 5rem 20rem;
+}
+
+.AddNewTaskContent input{
+   
+    width:90%;
+    height:3rem;
+    border: 1px solid blueviolet;
+}
+.AddNewTaskContent input[type="text"]{
+   padding-left: 3rem;
+}
+
+.AddNewTaskContent input:focus{
+   
+    outline: none;
+}
+
+
+.AddNewTaskButton{
+    padding:.5rem;
+
+    font-size: 1.5rem;
+
+    background: transparent;
+    color:blueviolet;
+
+    border: 1px solid blueviolet;
+
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    
+    .AddNewTaskContent{
+        margin: 5rem 1rem 5rem 1rem;
+    }
+    .AddNewTaskContent input{
+   
+        width:70%;
+    }
+
+    .AddNewTaskButton{
+        padding:1rem;
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
