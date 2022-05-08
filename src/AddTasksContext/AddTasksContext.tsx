@@ -22,7 +22,14 @@ export function TaskstDownProvider({children}:TasksProviderProps){
      
     //função para ler as tarefas do localStorage
     const getTasks = () => {
-        return JSON.parse(localStorage.getItem("db_Tarefas")) ?? [];
+        let tasksLS: any[] = [];
+        if(localStorage.getItem('db_Tarefas') === null){
+          return  []
+        }
+        else{
+             tasksLS.push(localStorage.getItem('db_Tarefas'));
+             return JSON.parse(tasksLS[0]);
+        }
     }
     
     //função para adicionar as tarefas no localStorage
