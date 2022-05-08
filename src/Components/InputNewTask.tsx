@@ -7,7 +7,9 @@ export const InputNewTask = () => {
 
     const [valTeclado,setTeclado]=useState("");
     const {addTasks} = useContext(TasksContext);
-
+    function add(e:any){
+        addTasks(e.target.value);
+    }
    
     return(
         <div className={estilo.AddNewTaskContent}>
@@ -20,7 +22,7 @@ export const InputNewTask = () => {
                 onKeyDown={(e) => {
                     if (e.key === "Enter") 
                     {   
-                        addTasks(e.target.value);
+                        add(e);
                        
                     }
                 }
